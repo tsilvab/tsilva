@@ -23,6 +23,33 @@ body {
 
 }
 
+.modal-header{
+  display:flex;
+  justify-content:center; 
+}
+
+button{
+  visibility: hidden;
+  color: rgb(3, 3, 3);
+  font-size: 18px;
+  font-family: 'Imprima', sans-serif;
+ background-color: transparent;
+float: right;
+}
+
+#close{
+  border: 3px solid rgb(1, 1, 1);
+}
+
+#close{
+  display:flex;
+  align-content: center;
+    flex-wrap: wrap;
+     width: auto;
+    line-height: 1.25;
+}
+
+
 .card2{
   width: 400px;
   height: 600px;
@@ -45,9 +72,7 @@ img {
     height:250px;  */
     padding-top: 10px;
     box-shadow: 4px 4px 4px black;
-  
     border-radius: 100px;
-    opacity: 1;
 } 
 
 ul li {
@@ -195,7 +220,7 @@ a:link {
 
 
   .topnav {
-    background-color: rgb(214, 208, 208);
+    background-color:rgb(214, 208, 208);
     overflow: hidden;
   }
   
@@ -203,7 +228,7 @@ a:link {
   .topnav a {
     float: right;
     display: block;
-    color: rgba(39, 39, 39, 0.746);
+    color: #020202;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -219,7 +244,7 @@ a:link {
   /* Add an active class to highlight the current page */
   .topnav a.active {
     background-color: rgb(214, 208, 208);
-    color: rgba(39, 39, 39, 0.746);
+    color: rgb(39, 39, 39);
     position: fixed;
   }
   
@@ -227,6 +252,7 @@ a:link {
   .topnav .icon {
     display: none;
   }
+  
 
 
   /* RESPONSIVE CSS
@@ -245,10 +271,16 @@ a:link {
     .card{
       top:0px;
       left:0px;
+  
     }
     .card2{
       width:auto;
       height:auto;
+      padding-bottom: 20px;
+      padding-right: 10px;
+    }
+    button {
+      visibility:visible;
     }
     }
 
